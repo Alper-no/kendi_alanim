@@ -1,0 +1,26 @@
+
+/*! Universal selecktor */
+/*? Tum elementleri secer */
+*{
+    /** Tum elementlerin dis bosluklarini sifirladik */
+    margin: 0;
+    /* tum elemetnlerin ic bosluklarini sifirladik. */
+    padding: 0;
+    /*? hexadesimal colors */
+    color: rgb(38, 124, 95);
+    color: #123456;
+    color: #bebe;
+    color: #ece;
+}
+/* ! class etiketlere gore daha ozel bir secici oldugu icin digerlerini ezer */
+.images{
+    width: 400px;
+
+    /* BORDER */
+   border-color: #ece;
+   border-width: 6PX;
+   border-style: double;
+
+   /* shorthand border */
+   border: 7px inset #123456;
+}
