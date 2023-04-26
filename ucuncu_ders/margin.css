@@ -8,6 +8,7 @@
     background-color: rgb(199, 127, 32);
     margin: 50px;
     margin: 10px 30px;
+    text-align: center;
 }
 
 .div{
@@ -16,5 +17,6 @@
     margin-top: 10px;
     margin-bottom: 20px;
     width: 100px;
+    border-radius: 20px;
     
 }
