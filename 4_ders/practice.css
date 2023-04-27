@@ -1,0 +1,50 @@
+/*? resetleme */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+h1{
+    margin: 20px 0;
+    /* cursor: pointer; */
+}
+
+
+/* nav a{
+    text-decoration: none;
+    color: black;
+
+} */
+
+/*? Inline element icerik kadar yer kaplarlar. Bu sebepten dolayi margin ve padding top ve bottom, width degerlerini alamazlar. Bu ozelikleri kullanmak icin elementler display property si ile inline-block haline getirilebilr*/
+
+.top-nav a{
+    text-decoration: none;
+    color: black;
+    background-color: rgb(197, 129, 41);
+    border-radius: 15px;
+    padding: 10px;
+    /* hepsi esit oldu inline-blockla */
+    display: inline-block;  
+    width: 100px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+/* inline elemanlarin uzunlungu contentle ayni metinle */
+
+.top-nav a:hover{
+    /* background-color: rgb(104, 104, 161); */
+    opacity: 0.5; /*saydamlik verdik*/
+    color: red;
+}
+
+
+
+
+/*! a:link: Normal durum, ziyaret edilmemiş bağlantı
+a:visited: Daha önce ziyaret edilen bağlantı
+a:hover: Farenin üzerinde olma durumu
+a:active: Tıklanan bağlantı */
