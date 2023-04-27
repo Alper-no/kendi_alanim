@@ -10,6 +10,8 @@ body{
     /* font-weight: 500; */
 
 
+
+
     /* font weight kalinlik */
     font-weight: bolder;
     
@@ -17,8 +19,19 @@ body{
 
     font-variant: small-caps;
 }
-
-    span{
+/*  Descendant Selector */
+/* ! p elementinin icersindeki span 'lerin rengini red yap dedik. */
+   /* p span{
         color: red;
-    }
-
+    } */
+ .text-style span{
+    color: red;
+ }
+.decoration{
+    color: green;
+    
+    text-decoration: overline;   /*ust czgi*/
+    text-decoration: underline;   /*alt czgi*/
+    text-decoration: line-through;   /*uzerini ciz czgi*/
+    text-decoration: none;   /*default*/
+}
