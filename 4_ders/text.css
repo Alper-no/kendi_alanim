@@ -8,16 +8,17 @@ body{
 /* Buyukluk ayarlar */
     font-size: 12px;
     /* font-weight: 500; */
+    text-align: center;
 
 
 
 
-    /* font weight kalinlik */
+    /* font weight kalinlik
     font-weight: bolder;
     
     font-style: italic;
 
-    font-variant: small-caps;
+    font-variant: small-caps; */
 }
 /*  Descendant Selector */
 /* ! p elementinin icersindeki span 'lerin rengini red yap dedik. */
@@ -34,4 +35,25 @@ body{
     text-decoration: underline;   /*alt czgi*/
     text-decoration: line-through;   /*uzerini ciz czgi*/
     text-decoration: none;   /*default*/
+}
+
+#be{
+    color: blue;
+    
+}
+
+.transformation{
+    color: blueviolet;
+    text-transform: capitalize;
+    text-transform: uppercase;
+    text-transform: lowercase;
+    text-transform: none;
+}
+
+.spacing{
+    color: yellowgreen;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    word-spacing: 10px;
+    line-height: 1.9;
 }
