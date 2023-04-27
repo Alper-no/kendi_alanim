@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing</title>
+
+    <style>
+
+        *{
+            /* genelde baslangicta boyle yaziyoruz */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+/* ortak ozellikleri iceren klaslar */
+        .box{
+            width: 200px;
+            border: 5px solid red;
+            padding: 10px;
+
+        }
+        /* Farkliliklari iceren class lar */
+        .content{
+            
+            box-sizing: content-box;
+
+        }
+
+        .border{
+            
+            box-sizing: border-box;
+
+        }
+        .center{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Box Sizing</h1>
+
+    <div class="content box center">content-box</div>
+    <div class="border box center">border-box</div>
+</body>
+</html>
