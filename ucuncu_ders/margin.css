@@ -8,15 +8,30 @@
     background-color: rgb(199, 127, 32);
     margin: 50px;
     margin: 10px 30px;
+    margin: 10px 20px 30px 40px;
+ /* Bir blok element icerisnde inline elementler var ise bunlar text-align ile hizalanabilir. Blok element icersindeki blok elementler text align ile hizalanmaz. */
+
     text-align: center;
+
+    /* container div ine her yoned 10 px lik bir ic alan acmis oldik. */
+    /* padding: 10px; */
+    padding: 20px 10px;
+
+   
 }
 
 .div{
     background-color: blueviolet;
 
+
     margin-top: 10px;
     margin-bottom: 20px;
     width: 100px;
     border-radius: 20px;
+
+    /*  Bir blok element icersindeki bir baska blok element  margin : auto ile ortanabilir. */
+    /* margin:auto */
+    margin: 20px auto;
+
     
 }
