@@ -1,0 +1,22 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+
+.text-style{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+/* Buyukluk ayarlar */
+    font-size: 12px;
+    /* font-weight: 500; */
+
+
+    /* font weight kalinlik */
+    font-weight: bolder;
+    
+    font-style: italic;
+
+    font-variant: small-caps;
+
+    
+
+}
