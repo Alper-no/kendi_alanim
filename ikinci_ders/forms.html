@@ -1,26 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FORMS</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Forms</h1>
 
-    <form action="" method="post">
-        <section id="name">
-            <!-- input a baslik vermek icin label kullanilir geneld
+    <form action="result.html" method="get">
+      <section id="name">
+        <!-- input a baslik vermek icin label kullanilir geneld
              for da herhangi bir inputla iliskilerdinrmek icin icine inputun adini yaziyoruz-->
-            <label for="isim">Isim</label><br>
-            <input type="text" id="isim" placeholder="Adinizi Girin" name="">
-            <!-- placeholder kutucugun icine yazi yazmamizi saglar -->
-            <!-- name  -->
+        <label for="isim">Isim</label><br />
+        <input
+          type="text"
+          id="isim"
+          placeholder="Adinizi Girin"
+          name="Isim"
+          value=""
+          required
+        />
+        <!-- placeholder kutucugun icine yazi yazmamizi saglar -->
+        <!-- name yazigimiz bilgiler name ile backend e gidiyor -->
+        <!--! required bir alani zorinlu kilar orayi doldurmak gerekir. -->
+        <br /><br />
+        <!-- password -->
+        <label for="pass">Password</label><br />
+        <input
+          type="password"
+          name="pass"
+          id="pass"
+          placeholder="Sifre giriniz"
+          required
+        />
+        <!-- email -->
+        <br /><br />
+        <label for="email">Email</label><br />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email giriniz"
+        />
+        <br />
+        <label for="age">Age</label><br />
+        <input
+          type="number"
+          name="age"
+          id="age"
+          placeholder="Yasinizi gririniz"
+          min="0"
+          max="160"
+        />
+        <br /><br />
+        <!-- gender   / Radio Button-->
+        <label for="gender">Gender</label><br />
 
+        <label for="erkek">Erkek</label>
+        <input
+          type="radio"
+          name="gender"
+          id="erkek"
+          placeholder="Sifre giriniz"
+          value="Erkek"
+        />
+
+        <label for="kadin">Kadin</label>
+        <input
+          type="radio"
+          name="gender"
+          id="kadin"
+          placeholder="Sifre giriniz"
+          value="Kadin"
+        />
+        <label for="none">None</label>
+        <input type="radio" name="gender" id="none" value="None" checked />
+        <!-- checked kullaninca baslangic olarak checked de kaliyor -->
+        <br /><br />
+
+        <label for="fav-cars">Lutfen favori aralarinizi seciniz.</label><br />
+        <input type="checkbox" name="cars1" id="" value="BMW" />BMW <br />
+        <input type="checkbox" name="cars2" id="" value="Audi" />Audi <br />
+        <input type="checkbox" name="cars3" id="" value="Sahin" />Sahin <br />
+
+        <br />
+        <label for="dob">Dogum tarihi</label> <br />
+        <input type="date" name="dob" id="dob" min="1990-01-01" />
+      </section>
+      <br />
+      <section id="buttons">
+        <input type="submit" value="Kaydet" />
+        <input type="reset" value="Sil" />
+        <!-- reset sil butonu olusturdu. -->
+        <!-- select -->
+        <br />
+        <br />
+        <section>
+          <select name="tatli" id="tatli">
+            <optgroup label="Serbetli tatlilar">
+              <option value="kunefe">Kunefe</option>
+              <option value="H.dilim">H.dilim</option>
+            </optgroup>
+
+            <optgroup label="Sutlu tatlilar">
+              <option value="Sutlac">Sutlac</option>
+              <option value="Kazandibi">Kazandibi</option>
+            </optgroup>
+          </select>
         </section>
-
-
+      </section>
     </form>
-</body>
+  </body>
 </html>
