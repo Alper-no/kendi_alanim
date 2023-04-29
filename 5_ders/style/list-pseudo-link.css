@@ -91,4 +91,35 @@ body {
     <div class="k"></div>  
   </div>
   </p> */
-  
+
+  /* input aktif hale geldiginde demek isiyorsak focus kullaniriz */
+input:focus {
+    background-color: tomato;
+    color: white;
+    /* border: 4px dotted white; */
+    outline: none;
+}  
+
+
+/* !LINKlerde kullanilan pseoduo */
+/* ? link ziyaret edilmemis linkleri secer */
+nav.links a:link{
+    color: brown;
+
+}
+/* visited ziyaret edildiginde  */
+nav.links a:visited{
+    color: rgb(42, 165, 48);
+
+}
+/* linklere tiklanildiginda */
+nav.links a:active {
+    color: rgb(165, 97, 42);
+
+}
+/* hover linkin uzerine fare ile geldiginde */
+nav.links a:hover{
+    color: rgb(42, 140, 165);
+    text-decoration: none;
+
+}
