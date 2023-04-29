@@ -1,0 +1,12 @@
+ul{
+    list-style-type: circle;
+    list-style-type: square;
+    list-style-type: none;
+    list-style-type: lower-latin;
+/*  Maddelerin yerlerini icersindemi yoks disinda mi olacak onu ayarlar. */
+    list-style-position: inside;
+
+    /* padding: 0;  (madde imlerinin soldaki boslugu ayarlamak icin). */
+
+    list-style-image: url('../img/igloo-solid.svg');
+}
