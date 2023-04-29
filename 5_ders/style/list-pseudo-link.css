@@ -1,28 +1,70 @@
-body{;
-    font-family: 'Lobster', cursive;
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+/* classi language olan ul elementini sec. */
+ul.Language {
+  font-family: "Bruno Ace SC", cursive;
+
+  /*? Madde imi stilleri */
+  list-style-type: circle;
+  list-style-type: square;
+  list-style-type: none;
+  list-style-type: lower-latin;
+  list-style-type: georgian;
+
+  /*? Madde iminin yeri li'lerin içerisinde mi yoksa dışında mı olacak */
+  list-style-position: outside;
+
+  /*? Madde imlerinin soldaki boşluğunu ayarlamak için */
+  padding: 20px;
+
+  /*? madde iminin seklini linkteki icona gore sec */
+  list-style-image: url("../img/igloo-solid.svg");
+}
+
+h2 {
+  color: blueviolet;
+}
+
+/*? h2 icerisindeki i elementine uygula */
+h2 i {
+  /** iconlarin buyuklugunu 40px yap */
+  font-size: 40px;
+}
+
+/*? fa-solid adindaki class'a uygula */
+.fa-solid {
+  /** iconlarin rengini red yap */
+  color: red;
+}
+
+/* ! ----- PSEUDO------ */
+ul.pseudo li:first-child {
+
+    color: blue;
+    font-weight: 700;
+}
+
+ul.pseudo li:last-child{
+    color: bisque;
+    font-weight: 900;
+}
+
+ul.pseudo li:nth-child(5){
+    color: rgb(244, 255, 196);
+    font-weight: 900;
 }
 
 
-
-ul{
-    font-family: 'Bruno Ace SC', cursive
-    
-    list-style-type: circle;
-    list-style-type: square;
-    list-style-type: none;
-    list-style-type: lower-latin;
-/*  Maddelerin yerlerini icersindemi yoks disinda mi olacak onu ayarlar. */
-    list-style-position: inside;
-
-    /* padding: 0;  (madde imlerinin soldaki boslugu ayarlamak icin). */
-
-    list-style-image: url('../img/igloo-solid.svg');
+ul.pseudo li:nth-child(even){
+    color: rgb(255, 196, 237);
+    font-weight: 900; background-color: lightgray;
 }
-
-h2 i{
-    font-size: 40px;
+ul.pseudo li:nth-child(odd){
+    color: rgb(196, 255, 232);
+    font-weight: 900; background-color: darkblue;
 }
-
-.fa-regular{
-    color: rebeccapurple;
+/* class i x olan p elementinin icersinde .y class inin icindeki z id li elementi sec. */
+p.x .y #z {
 }
