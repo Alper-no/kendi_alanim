@@ -1,70 +1,94 @@
 body {
-  font-family: "Quicksand", sans-serif;
-}
-
-/* classi language olan ul elementini sec. */
-ul.Language {
-  font-family: "Bruno Ace SC", cursive;
-
-  /*? Madde imi stilleri */
-  list-style-type: circle;
-  list-style-type: square;
-  list-style-type: none;
-  list-style-type: lower-latin;
-  list-style-type: georgian;
-
-  /*? Madde iminin yeri li'lerin içerisinde mi yoksa dışında mı olacak */
-  list-style-position: outside;
-
-  /*? Madde imlerinin soldaki boşluğunu ayarlamak için */
-  padding: 20px;
-
-  /*? madde iminin seklini linkteki icona gore sec */
-  list-style-image: url("../img/igloo-solid.svg");
-}
-
-h2 {
-  color: blueviolet;
-}
-
-/*? h2 icerisindeki i elementine uygula */
-h2 i {
-  /** iconlarin buyuklugunu 40px yap */
-  font-size: 40px;
-}
-
-/*? fa-solid adindaki class'a uygula */
-.fa-solid {
-  /** iconlarin rengini red yap */
-  color: red;
-}
-
-/* ! ----- PSEUDO------ */
-ul.pseudo li:first-child {
-
-    color: blue;
+    font-family: "Quicksand", sans-serif;
+  }
+  
+  /** class'ı language olan ul elementini sec */
+  ul.languages {
+    font-family: "Bruno Ace SC", cursive;
+  
+    /*? Madde imi stilleri */
+    list-style-type: circle;
+    list-style-type: square;
+    list-style-type: none;
+    list-style-type: lower-latin;
+    list-style-type: georgian;
+  
+    /*? Madde iminin yeri li'lerin içerisinde mi yoksa dışında mı olacak */
+    list-style-position: outside;
+  
+    /*? Madde imlerinin soldaki boşluğunu ayarlamak için */
+    padding: 20px;
+  
+    /*? madde iminin seklini linkteki icona gore sec */
+    list-style-image: url("../img/igloo-solid.svg");
+  }
+  
+  h2 {
+    color: blueviolet;
+  }
+  
+  /*? h2 icerisindeki i elementine uygula */
+  h2 i {
+    /** iconlarin buyuklugunu 40px yap */
+    font-size: 40px;
+  }
+  
+  /*? fa-solid adindaki class'a uygula */
+  .fa-solid {
+    /** iconlarin rengini red yap */
+    color: red;
+  }
+  /*!----- PSEUDO CLASSES ------- */
+  ul.pseudo li {
+    background-color: darkgray;
     font-weight: 700;
-}
-
-ul.pseudo li:last-child{
-    color: bisque;
-    font-weight: 900;
-}
-
-ul.pseudo li:nth-child(5){
-    color: rgb(244, 255, 196);
-    font-weight: 900;
-}
-
-
-ul.pseudo li:nth-child(even){
-    color: rgb(255, 196, 237);
-    font-weight: 900; background-color: lightgray;
-}
-ul.pseudo li:nth-child(odd){
-    color: rgb(196, 255, 232);
-    font-weight: 900; background-color: darkblue;
-}
-/* class i x olan p elementinin icersinde .y class inin icindeki z id li elementi sec. */
-p.x .y #z {
-}
+  }
+  
+  ul.pseudo li:first-child {
+    color: blue;
+  }
+  
+  ul.pseudo li:last-child {
+    color: green;
+  }
+  
+  ul.pseudo li:nth-child(5) {
+    color: purple;
+    font-weight: 300;
+  }
+  
+  ul.pseudo li:nth-child(odd) {
+    color: hotpink;
+    background-color: lightgray;
+  }
+  
+  ul.pseudo li:nth-child(even) {
+    color: lightsalmon;
+  }
+  
+  /*?Tek degilse */
+  /* ul.pseudo li:not(odd) {
+    background-color: green;
+  } */
+  
+  /*? Fare ile li'lerin üzerine gelindiğinde  */
+  ul.pseudo li:hover {
+    background-color: black;
+    cursor: pointer;
+    /* display: inline-block; */
+  }
+  /*? Farenin sol tuşu ile bir li'y tiklanidiginda  */
+  ul.pseudo li:active {
+    background-color: green;
+  }
+  
+  /*? class'i x olan p elementinin icerinde .y class'inin içindeki z id'li elementi sec  */
+  /* p.x .y #z{
+  }
+  <p class="x">
+  <div class="y">
+    <div id="z"></div>
+    <div class="k"></div>  
+  </div>
+  </p> */
+  
