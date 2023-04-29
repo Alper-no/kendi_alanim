@@ -102,6 +102,18 @@ input:focus {
 
 
 /* !LINKlerde kullanilan pseoduo */
+
+/* nav.links a {
+  color: crimson;
+  text-decoration: none;
+}
+
+nav.links a:hover {
+  color: purple;
+  text-decoration: underline;
+} */ kisayol bu asagidakilerin
+
+
 /* ? link ziyaret edilmemis linkleri secer */
 nav.links a:link{
     color: brown;
@@ -121,5 +133,40 @@ nav.links a:active {
 nav.links a:hover{
     color: rgb(42, 140, 165);
     text-decoration: none;
+
+}
+
+
+/* !----PSEUDO ELEMENTS----- */
+.p-elements::first-line{
+    color: red;
+}
+.p-elements::first-letter{
+    font-size: 30px;
+}
+
+ul.before-after li::before{
+    content: '😒';
+
+}
+
+ul.before-after li:nth-child(3)::before{
+    content: '🥲';
+
+}
+ul.before-after li:last-child::after{
+    content: '🤮';
+
+}
+ul.before-after li:nth-child(2)::after{
+    content: 'Nice car';
+    font-weight: 600;
+    font-family: 'Font Awesome 6 Free';
+content: '\f53a';
+
+}
+
+ul.before-after li:nth-child(3):hover::after{
+    content: '🥲';
 
 }
