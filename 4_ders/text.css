@@ -9,10 +9,6 @@ body{
     font-size: 12px;
     /* font-weight: 500; */
     text-align: center;
-
-
-
-
     /* font weight kalinlik
     font-weight: bolder;
     
@@ -52,14 +48,14 @@ body{
 
 .spacing{
     color: yellowgreen;
-    letter-spacing: 2px;
-    font-weight: bolder;
-    word-spacing: 10px;
-    line-height: 1.9;
+    letter-spacing: 2px; /*harfler arasi mesafe*/
+    font-weight: bolder;/**/
+    word-spacing: 10px;/*Kelimer arasi mesafe*/
+    line-height: 1.9;/*satir yukseligi*/ 
 
 }
 .indent{
-    text-indent: 30px;
+    text-indent: 30px;/*paragraf basi yapmak icin kullanilir.*/
 }
 
 .direct{
@@ -71,6 +67,7 @@ body{
     text-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5)
     
 }
+/* kutulara golgelendirme */
 .box-shadow{
     background-color: beige;
     padding: 20px;
