@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    
+    
+}
+
+body{
+
+     background-image: url(coffe.jpg) ;
+     
+}
+
+main{
+    background-color: rgb(231, 179, 110);
+    margin: 40px 100px ;
+    padding: px;
+    
+}
+
+h1{
+    padding: 20px 100px;
+    font-family: 'Lilita One', cursive;
+    text-align: center;
+     
+    }
+header p{
+    font-style: italic;
+    padding-bottom: 20px;
+    border-bottom: 2px solid brown;
+    width: 90%;
+    margin: auto;
+   
+}
+
+h3{
+    padding: 10px;
+    font-family: 'Lilita One', cursive;
+    
+}
+
+footer{
+    border-top: 2px solid brown;
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+}
+
+a{
+    color: black;
+    ;
+    
+    }
+footer p{
+    margin: 10px;
+    text-align: center;
+    
+}
+
+#deneme{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#list2 {
+    list-style-type: none;
+}
+#list1{
+    list-style-type: none;
+    text-align: left;
+    
+}
+
+
+
