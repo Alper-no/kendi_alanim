@@ -57,13 +57,14 @@ body {
     font-weight: 300;
   }
   
-  ul.pseudo li:nth-child(odd) {
+  ul.pseudo li:nth-child(odd) { /*Odd dedigmiz zaman tek sayilari alir o renge boyor*/
     color: hotpink;
     background-color: lightgray;
   }
   
-  ul.pseudo li:nth-child(even) {
+  ul.pseudo li:nth-child(even) { /*even da is ciftleri alir.*/
     color: lightsalmon;
+    
   }
   
   /*?Tek degilse */
@@ -77,7 +78,7 @@ body {
     cursor: pointer;
     /* display: inline-block; */
   }
-  /*? Farenin sol tuşu ile bir li'y tiklanidiginda  */
+  /*? Farenin sol tuşu ile bir li'y tiklanidigi sure boyunca o renge donusur.  */
   ul.pseudo li:active {
     background-color: green;
   }
@@ -162,7 +163,7 @@ ul.before-after li:nth-child(2)::after{
     content: 'Nice car';
     font-weight: 600;
     font-family: 'Font Awesome 6 Free';
-content: '\f53a';
+content: '\f53a'; /*Ikon kullanmak istiyorSAK \ KOAYARAK font awesome 6 yaziyruz*/
 
 }
 
