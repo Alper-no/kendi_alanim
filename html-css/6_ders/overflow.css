@@ -15,3 +15,6 @@
 .box3{
     overflow: scroll;
 }
+.box4{
+    overflow: auto; /* auto da metin uzunda yandaki imlecler cikiyor , kisaysa cikmiyor.*/
+}
