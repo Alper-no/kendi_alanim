@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient( to right,#1f033f,#18abcd);
+   
+}
+h1{
+    font-family: 'Rubik Vinyl', cursive;
+    color: white;
+    font-size: 5rem;
+    margin-top: 30px;
+    text-align: center;
+
+}
+
+.path{
+    margin: 10px 10%;
+    /* border: 2px solid white; */
+    display: inline-block;
+    border-radius: 10px;
+    background-image: linear-gradient( to right,#1f038f,#18abcd);
+    
+}
+
+img{
+    float: left;
+    width: 30%;
+    height: 236px;
+    padding: 10px;
+    
+}
+
+.description h3{
+    font-family: 'EB Garamond', serif;
+    color: orange;
+    font-size: 2rem;
+}
+
+.description p{
+    font-family: 'Times New Roman', Times, serif;
+    text-indent: 20px;
+    color: white;
+    text-align: justify;
+    padding: 0px 10px;
+}
+
+.description a{
+    padding: 10px 15px;
+    background-color: orangered;
+    border-radius: 5px;
+    float: right;
+    color: white;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+img:hover{
+    width: 50%;
+    
+}
+
+
+a:hover{
+    width: 25%;
+}
+
+
+
