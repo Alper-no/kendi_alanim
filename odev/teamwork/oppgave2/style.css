@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+.first{
+    background-image: url(./img/bg_720.jpg);
+}
+
+.photo{
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed; 
+    /* fixed sabitledi*/
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h1{
+    background-color: black ;
+    color: white;
+    font-size: 2rem ;
+    letter-spacing: 8px;
+    font-weight: 400;
+    padding: 1rem;
+    border-radius: 15px 0;
+    outline: 5px inset purple ;
+    outline-offset: 10px;
+}
