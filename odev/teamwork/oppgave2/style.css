@@ -28,11 +28,55 @@ body{
 h1{
     background-color: black ;
     color: white;
-    font-size: 2rem ;
+    font-size: 3rem ;
     letter-spacing: 8px;
     font-weight: 400;
-    padding: 1rem;
-    border-radius: 15px 0;
+    padding: 2rem;
+    border-radius: 20px 0;
     outline: 5px inset purple ;
-    outline-offset: 10px;
+    outline-offset: 1rem;
+    text-align: center;
+}
+
+.whiteback{
+    background-color: #f1f1f1;
+}
+
+.text{
+    text-align: center;
+    padding: 3rem 5rem;
+}
+
+.text h3{
+    margin-bottom: 1rem;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.second{
+    background-image: url(./img/bg2_720.jpg);
+}
+
+.second img{
+    width: 30%;
+}
+
+.blackback{
+    background-color: black;
+    color: white;
+}
+
+.third{
+    background-image: url(./img/bg3_720.jpg);
+}
+
+.third h1{
+    padding: 11px;
+    outline-offset: 3px;
+    font-size: 3rem;
+
+}
+
+.fourth{
+    background-image: url(./img/bg4_720.jpg);
 }
