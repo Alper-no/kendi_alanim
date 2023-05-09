@@ -219,12 +219,12 @@ const num16 = 27;
 // console.log(num16 === "27"); // false
 // //? === operatörü otomatik tip dönüşümü yapmadığından dolayı, farklı tiplerdeki değerleri eşit olarak kabul etmez.tip ve değer aynı mı diye sorgular.
 
-// // const user1 = prompt("Lütfen bir sayı griniz: ");
-// // const user2 = prompt("Lütfen bir sayı griniz: ");
-// // console.log(user1);
-// // console.log(user2);
-// // const isSame = user1 == user2;
-// // console.log(isSame);
+//  const user1 = prompt("Lütfen bir sayı griniz: ");
+//  const user2 = prompt("Lütfen bir sayı griniz: ");
+//  console.log(user1);
+//  console.log(user2);
+//  const isSame = user1 == user2;
+//  console.log(isSame);
 
 // console.log(true == 1); //true
 // console.log(null == undefined); // true
