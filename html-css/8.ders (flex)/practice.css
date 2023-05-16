@@ -3,3 +3,30 @@
     margin: 0;
     padding: 0;
   }
+
+  header{
+    background-color: #f8f5f1;
+    padding: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .img{
+    flex: 1;
+  }
+
+  .text{
+    flex: 2;
+    flex-basis: 300px;
+  }
+
+  section.img img{
+    width: 100%;
+    min-width: 300px;
+  }
+
+  section.text h1,p{
+    line-height: 2;
+
+  }
