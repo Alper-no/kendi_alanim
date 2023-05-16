@@ -8,6 +8,7 @@ ul.nav {
   background-color: cadetblue;
   list-style-type: none;
   padding: 1rem;
+  height: 15rem;
 
   /*? Yazilari hizalamak icin */
   text-align: center;
@@ -19,12 +20,21 @@ ul.nav {
   flex-direction: row; /*? defaut: row*/
 
   /*? Satirlar arasi bosluk, ilk verilen satirlar arasi, 2. verilen sutunlar arasi bsoluktur */
-  gap: 2rem 4rem;
+  gap: 1rem;
 
   /*? sikistirma veya alt satira gecebilme:flex-wrap: wrap, nowrap, wrap-reverse*/
   flex-wrap: wrap;
 
-  justify-content: space-between;
+  /*! Yatay Hizalama: justify-content
+  /** flex-start, flex-end,center, space-around,space-evenly, space-between*/
+  justify-content: center;
+
+  /*! Dikey Hizalama => align-items
+  /**  flex-start, flex-end, center, stretch,baseline */
+  /* align-items: flex-start; */
+
+  /*! Cok satirli verilerin dikeyde hizalanmasi icin kullanilir*/
+  align-content: flex-start;
 }
 
 ul.nav li {
@@ -32,4 +42,22 @@ ul.nav li {
   width: 7rem;
   padding: 0.5rem;
   border-radius: 5px;
+}
+
+.container{
+  background-color: cornflowerblue;
+  margin-top: 2rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  
+
+}
+
+.container *{
+  background-color: crimson;
+  
 }
