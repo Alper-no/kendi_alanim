@@ -45,6 +45,21 @@ button:hover {
   color: var(--white);
 }
 
+header.hero{
+    display: flex;
+}
+
+header.hero img{
+    width: 400px;
+}
+
+
+
+
+
+
+
+
 /*! MEDIA SORGULARI */
 @media screen and (max-width: 700px) {
   nav {
@@ -59,6 +74,11 @@ button:hover {
     .section-btn{
         display: flex;
         flex-direction: column;
+
+    }
+    .section-btn button{
+        margin: 0.5rem;
+        width: 250px;
     }
   }
   
