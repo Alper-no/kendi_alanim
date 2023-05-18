@@ -47,18 +47,61 @@
 //   }
 // }
 
-
-
 // 4- Belirli bir string ifadenin içindeki sesli harfleri bulan fonksiyonu yazınız?(includes)
 
-console.log(findVowels('hello world'))// output: eoo
+// console.log(findVowels('hello world')) // output: eoo
 
+// const str1 = 'hello world'
 
+// function findVowels(str) {
+//   let vowels = ''
+//   let sesliler = 'aeıioöuü'
 
+//   for (let i = 0; i < str.length; i++) {
+//     if (sesliler.includes(str[i])) {
+//       vowels += str[i]
+//     }
+//   }
 
+//   return vowels
+// }
+
+// console.log(findVowels('hello world'))
 
 // 5- Belirli bir sayının tam bölenlerinin toplamını bulan fonksiyonu yazınız?
 // console.log(sumOfDivisors(12)) // output: 28
+
+// const sayi = 24 // 24 12 8 6 4 3 2 1
+
+// function sumOfDivisors(num) {
+//   let sum = 0;
+  
+//   for (let i = 1; i <= num; i++) {
+//     if (num % i == 0) {
+//       sum += i
+//     }
+//   }
+//   return sum
+// }
+// console.log(sumOfDivisors(sayi))
+
+
+
+
+// const sayi = 24 // 24 12 8 6 4 3 2 1
+
+// function sumOfDivisors(num) {
+//   let list = []
+//   for (let i = 1; i <= num; i++) {
+//     if (num % i == 0) {
+//       list.push(i)
+//       console.log(i)
+//     }
+//   }
+
+//   return list
+// }
+// console.log(sumOfDivisors(sayi))
 
 // 6- Belirli bir sayının asal olup olmadığını bulan fonksiyonu yazınız?
 // console.log(isPrime(7)) // output: true
