@@ -103,6 +103,12 @@ main .card:nth-child(even){
   header.hero{
     flex-direction: column;
   }
+  main .card{
+    flex-direction: column;
+  }
+  main .card:nth-child(even){
+    flex-direction: column  ;
+  }
 }
 
 @media screen and (max-width: 420px) {
