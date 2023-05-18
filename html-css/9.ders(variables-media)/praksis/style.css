@@ -56,19 +56,40 @@ header.hero{
     gap: 1rem;
 }
 
+header.hero section{
+    flex: 1;
+}
+
 header.hero h1,p{
     line-height: var(--line-h-lg);
 }
 
 header.hero img{
-    width: 400px;
+    width: 100%;
+    min-width: 300px;
 }
 
+main .card {
+    display: flex;
+    align-items: center;
+    border: 20px;
+    box-shadow: var(--shadow-light);
+    padding: 1rem;
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+  
+  main .card article {
+    flex: 1;
+  }
+  
+  main .card img {
+    width: 100%;
+  }
 
-
-
-
-
+main .card:nth-child(even){
+    flex-direction: row-reverse;
+}
 
 
 /*! MEDIA SORGULARI */
@@ -78,6 +99,9 @@ header.hero img{
   }
   nav img{
     width: 250px;
+  }
+  header.hero{
+    flex-direction: column;
   }
 }
 
