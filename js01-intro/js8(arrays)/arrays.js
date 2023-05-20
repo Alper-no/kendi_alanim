@@ -56,3 +56,11 @@ console.log(dizi2);
 // colors[4] = c
 
 // console.log(colors)
+
+
+const colors = ['Red','Green','Blue'];
+
+colors[6] = 2
+console.log(colors);
+console.log(color.length);//7 cunku bos elemanlari da sayar.
+console.log(colors[3]);// bos ifadeyi alir.
