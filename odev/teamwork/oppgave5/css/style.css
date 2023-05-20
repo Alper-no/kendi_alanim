@@ -5,10 +5,54 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/*HEader Kismi*/
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0;
+    background-color: var(--bg);
+    border-bottom: 2px solid var(--clarusway);
+    color: white;
+    padding: 1rem 15px;
+}
+.nav{
+    display: flex;
+    gap:0.8rem
+}
+span{
+    color: var(--clarusway);
+}
+
+div a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+/* Main Kismi*/
+
+.img{
+    background-image: url(./../img/showcase_720.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.text{
+    color: white;
+    text-align: center;
+    
+}
+
+.text h1{
+    font-size: 2.5rem;
+}
+
+.text p{
+    margin: 0 2rem;
 }
