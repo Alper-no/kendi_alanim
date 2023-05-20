@@ -56,3 +56,46 @@ div a{
 .text p{
     margin: 0 2rem;
 }
+
+/*Article Kismi*/
+
+.article{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.1rem;
+    background-color: var(--bg);
+    color: white;
+}
+
+article p{
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+article input{
+    padding: 0.3rem 0;
+    ;
+}
+
+.article button{
+    background-color: orangered;
+    padding: 0.4rem;
+    color: white;
+
+}
+
+
+section{
+    display: flex;
+    text-align: center;
+    gap: 1rem;
+    font-size: 14px;
+    margin: 1.2rem;
+    
+}
+
+section img{
+    width: 20%;
+    
+   
+}
