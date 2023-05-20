@@ -153,3 +153,32 @@ console.log(cls) */
 // car.push(...car2) //['Audi', 'BMW', 'Ford', 'Tesla','Mercedes'] diğer arrayin her elemanını ayrı ayrı dahil eder.
 
 // console.log(car[2][2]) //Mercedes çıkar
+
+
+//pop 
+
+// const car = ['Audi', 'BMW']
+
+// console.log(car.pop()) //BMW yi siler consola yazdırır
+
+// const silinen = car.pop()
+
+// console.log(silinen)
+
+// console.log(car.pop())
+
+
+//unshift
+
+// const colors = ['Green','Blue']
+
+// console.log(colors.unshift('Red')) //yeni oluşan array in uzunluğunu verir.
+// console.log(colors) //['Red', 'Green', 'Blue']
+
+// const car = ['Audi', 'BMW']
+// const car2 = ['Ford', 'Tesla', 'Mercedes']
+
+// car.unshift(car2) // 2. array i tek array olarak başa ekler. [['Ford', 'Tesla', 'Mercedes'],'Audi', 'BMW']
+// car.unshift(...car2) // her elemanı ayrı ayrı başa ekler
+
+// console.log(car)
