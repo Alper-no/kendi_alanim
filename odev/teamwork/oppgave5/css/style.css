@@ -99,3 +99,15 @@ section img{
     
    
 }
+
+/* FOOTER KISMI*/
+
+footer{
+    text-align: center;
+    background-color: var(--bg);
+    padding: 1rem;
+    color: white;
+}
+footer img{
+    width: 20%;
+}
