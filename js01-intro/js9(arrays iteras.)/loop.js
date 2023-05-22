@@ -56,20 +56,22 @@ console.log(grades);
 //* fonksiyon "ogrenci bulunamadi" dondurulmelidir.
 //*--------------------------------------------------------
 
-const students = ['ahmet','mehmet','ismet','saffet','ahmet','saffet']
+// const students = ['ahmet','mehmet','ismet','saffet','ahmet','saffet']
 
-const findstudent = (name) => {
-    let counter = 0
+// const findstudent = (name) => {
+//     let counter = 0
 
-    for(let student of students){
-        if( student === name){ //* aranan zizinin icindeki elmana esitse
-            counter++ //* sayaci bir arttir
-        }
-    }
-
-    return counter
-}
-console.log(findstudent('ahmet'));
-console.log(findstudent('ismet'));
-console.log(findstudent('Alihan'));
+//     for(let student of students){
+//         // if( student === name){ //* aranan zizinin icindeki elmana esitse
+//         //     counter++ //* sayaci bir arttir
+//         // }
+//         student === name.toLowerCase() && counter++ //* if  yerine bu da yazilabilir daha kisa.    
+//     }
+//      return counter === 0 
+//     ? `${name} can not be found :` 
+//     : `${name} found ${counter} times`
+// }
+// console.log(findstudent('ahmet'));
+// console.log(findstudent('ismet'));
+// console.log(findstudent('Alihan'));
 
