@@ -50,13 +50,20 @@
     grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 5; */
-  
-    /*!  grid-area: row_start / col_start / row_end / col_end */
-    grid-area: 3/2/5/4;
-    background-color: skyblue;
-  }
-  
-  .c12 {
-   
-  }
-  
+
+  /*!  grid-area: row_start / col_start / row_end / col_end */
+  grid-area: 3/2/5/4;
+  background-color: skyblue;
+}
+.c12 {
+  grid-column: span 3;
+  background-color: springgreen;
+}
+
+.c9 {
+  grid-row: span 2;
+  background-color: violet;
+}
+.c13 {
+  grid-area: span 2 / span 2;
+}
