@@ -2,37 +2,37 @@
 //*           FOREACH METHOD
 //* =======================================
 
-console.log("****** ITERATION **********")
+// console.log("****** ITERATION **********")
 
-const prices = [250, 150, 300, 500]
+// const prices = [250, 150, 300, 500]
 
-//* KLASIK FOR
-for (let i = 0; i < prices.length; i++) {
-  console.log(prices[i])
-}
-console.log("*********")
+// //* KLASIK FOR
+// for (let i = 0; i < prices.length; i++) {
+//   console.log(prices[i])
+// }
+// console.log("*********")
 
-//* FOREACH
-prices.forEach((p) => console.log(p))
+// //* FOREACH
+// prices.forEach((p) => console.log(p))
 
-console.log("*********")
+// console.log("*********")
 
-prices.forEach((p, i) => console.log("DEGER:", p, "INDIS:", i))
+// prices.forEach((p, i) => console.log("DEGER:", p, "INDIS:", i))
 
-//?-------------- ÖRNEK -------------------
-//?  Dizideki toplam fiyati hesaplayalim.
-let sum = 0
-prices.forEach((price) => (sum += price))
+// //?-------------- ÖRNEK -------------------
+// //?  Dizideki toplam fiyati hesaplayalim.
+// let sum = 0
+// prices.forEach((price) => (sum += price))
 
-console.log("SUM:", sum)
+// console.log("SUM:", sum)
 
-//?-------------- ÖRNEK -------------------
-//?  Dizideki toplam fiyati hesaplayalim.
-let sum = 0
-prices.forEach((price) => (sum += price))
-console.log("SUM:", sum)
+// //?-------------- ÖRNEK -------------------
+// //?  Dizideki toplam fiyati hesaplayalim.
+// let sum = 0
+// prices.forEach((price) => (sum += price))
+// console.log("SUM:", sum)
 
-console.log("*********")
+// console.log("*********")
 //! NOT: forEach metodu void metottur.(Herhangi bir deger dondurmez)
 console.log(prices.forEach((price) => price * 2))
 
