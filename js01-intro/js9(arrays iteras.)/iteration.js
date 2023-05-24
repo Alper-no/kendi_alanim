@@ -105,12 +105,21 @@ salaries
 //* =======================================
 //*             REDUCE METHOD
 //* =======================================
+const mayişlar = [5500, 8000, 6500, 9000, 10000, 15000, 25000]
+
+const toplamMayiş = mayişlar.reduce((toplam, deger) => toplam + deger, 0)
+
+console.log("TOPLAM MAYIŞ:", toplamMayiş)
 
 
 
 
+//? ORNEK:maasi 6000 ile 10000 tl arasindaki arkadaslara %10 zam yapip bu maaşların toplamini hesaplayacagiz.
 
-
+const zamliMaasToplami = mayişlar
+  .filter((m) => m >= 6000 && m <= 10000)
+  .map((m) => m * 1.1)
+  .reduce((t, m) => t + m)
 
 
 
