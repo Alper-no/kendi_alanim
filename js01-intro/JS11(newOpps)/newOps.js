@@ -54,3 +54,43 @@ const car = {
     car2: { nameCar2, modelCar2, engineCar2 },
   } = cars
   
+  //* Example
+const team = [
+    {
+      name: "Josh",
+      surname: "Barry",
+      job: "developer",
+      age: 30,
+    },
+    {
+      name: "Josh",
+      surname: "Barry",
+      job: "tester",
+      age: 45,
+    },
+    {
+      name: "Hazel",
+      surname: "Nut",
+      job: "team lead",
+      age: 40,
+    },
+  ]
+
+  // ? KLASİK
+team.forEach(t => {
+    console.log("NAME", t.name);
+    console.log("SURNAME:", t.surname);
+    console.log("JOB:", t["job"]);
+    console.log("AGE:", t["age"]);
+    console.log("**************");
+})
+
+// ? DESTR
+team.forEach(t => {
+    const {name,surname,job,age} = t
+    console.log("NAME", name);
+    console.log("SURNAME:", surname);
+    console.log("JOB:", job);
+    console.log("AGE:", age);
+    console.log("**************");
+})
