@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 1000px;
+    margin:  auto;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 2fr 4fr 1fr;
+    gap: 20px;
+    color: white;
+    height: 200vh;
+    font-size: 1,5rem;
+    font-weight: 700;
+    margin-top: 10px;
+
+}
+
+.item{
+    background-color: royalblue;
+    padding: 10px;
+}
+
+.header{
+    grid-column: span 12;
+}
+.small-box-1{
+    grid-column: span 3 ;
+}
+.small-box-2{
+    grid-column: span 3;
+}
+.small-box-3{
+    grid-column:span 3 ;
+}
+
+.sidebar{
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+.main{
+    grid-column: span 3;
+}
+.footer{
+    grid-column: span 12;
+}
