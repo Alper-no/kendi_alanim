@@ -6,7 +6,7 @@ document.title = "DOM DOM 🚀"
 //*            GETELEMENTBYID()
 //*===========================================
 // document.getElementById("header").style.border = "1px solid red"
-const myHeader = document.getElementById("header")
+const myHeader = document.getElementById("header") /*Bu fonk.(getElementById) ID si header olan elemente eristirir .*/
 console.log(myHeader)
 
 myHeader.style.backgroundColor = "red"
@@ -24,14 +24,14 @@ addButon.style.padding = "0.6rem"
 //? Deger atama
 addButon.value = "SAVE"
 
-//* h1
+//* h1 in icindekini okuma
 const h1 = document.getElementById("heading1")
 console.log(h1)
 
 //? Deger atama
 h1.textContent = "DOM Introduction"
 
-//? Deger okuma
+//? Deger okuma (asagidakilerin hepsi yazi elementinin icerigini yazdirir.)
 console.log(h1.textContent)
 console.log(h1.innerText)
 console.log(h1.innerHTML)
@@ -39,7 +39,7 @@ console.log(h1.innerHTML)
 //*===========================================
 //*          GETELEMENTSBYTAGNAME()
 //*===========================================
-
+//!Bir elemani Tag(etiket) adina gorebulur//
 const myInputs = document.getElementsByTagName("input")
 console.log(myInputs) //? [input#input, input#btn, input: input#input, btn: input#btn]
 
