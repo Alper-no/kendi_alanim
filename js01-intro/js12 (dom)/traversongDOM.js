@@ -15,7 +15,7 @@ console.log("**** TRAVERSING DOM ****")
 
 //* 1- Yukari Yonde traverse
 //*----------------------------------------------
-//! parentElement, parentNode
+//! parentElement, parentNode yukari gitmek icin
 const addItem = document.querySelector(".add-item")
 console.log(addItem)
 

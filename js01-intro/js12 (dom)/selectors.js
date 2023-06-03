@@ -75,8 +75,8 @@ listsArr.forEach((li) => console.log(li))
 
 // lists[2].innerHTML = "Javascript language"
 lists[2].innerHTML = `<h1>Javascript</h1>`
-lists[3].innerText = `<h1>React</h1>`
-lists[4].textContent = `<h1>VUE</h1>`
+lists[3].innerText = `<h1>React</h1>`// gordugunu metin olarak aligilar ve yazdirir.
+lists[4].textContent = `<h1>VUE</h1>`// gordugunu metin olarak aligilar ve yazdirir.
 //* ========================================
 //*              QUERYSELECTOR()
 //* ========================================
