@@ -2,19 +2,23 @@ console.log("**** CREATE NODE ****")
 
 //* ------- YENI BIR ELEMENT OLUSTURMA ------
 
-const langInput = document.querySelector("#input")
+const langInput = document.querySelector('#input')
 
 //? 1- olustur
+
 const newP = document.createElement("p")
 
 //? 2-Eger text tabanlı bir element ise text dugumunu olustur
-// const text = document.createTextNode("Bu bir yeni p elementidir.")
+
+ // const text = document.createTextNode("Bu bir yeni p elementidir.")
 const text = document.createTextNode(langInput.value)
 
 //? 3- Olusturulan text dugumunu yeni elemente bagla (append)
+
 newP.appendChild(text)
 
 console.log(newP)
+
 //? 4- Yeni elementin DOM tree baglanmasi (append)
 
 //* main bolumun en sonuna yeni elementi ekler.
