@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Aylik Gider Uygulamasi</h1>
+    <div class="gelirInput">
+      <input type="text" id="gelir" value="" placeholder="Gelir ekle..." />
+      <button class="gelirEkle">Ekle</button>
+    </div>
+    <div class="form">
+      <h3>Harcama Formu</h3>
+
+      <label for="sted">Harcama Yapilan Yer</label><br>
+      <input
+        type="text"
+        id="yer"
+        placeholder="Manav,market,fatura,vb."
+        name="sted"
+        value=""
+      /> <br>
+      <label for="tarih">Tarih</label><br>
+      <input
+        type="date"
+        id="dob"
+        placeholder=""
+        name="tarih"
+        value=""
+      /> <br>
+
+      <label for="gider">Harcanan Miktar</label><br>
+      <input
+        type="text"
+        id="miktar"
+        placeholder="100tl"
+        name="gider"
+        value=""
+      />
+
+      <input type="submit" id="kaydet" value="Kaydet">
+
+
+    </div>
+
+  <table>
+    <tr>
+        <th>Tarih</th>
+        <th>Harcanan Yer</th>
+        <th>Miktar</th>
+        <th></th>
+    </tr>
+  </table>
+ 
+
+  <table>
+    <tr>
+        <th>Geliriniz</th>
+        <td>:0 tl</td>
+      </tr>
+      <tr>
+        <th>Gideriniz</th>
+        <td>:0 tl</td>
+      </tr>
+      <tr>
+        <th>Kalan</th>
+        <td>:0 tl</td>
+      </tr>
+  </table>
+
+  <button>Bilgileri Temizle</button>
+
+    <script src="app.js"></script>
+  </body>
+</html>
