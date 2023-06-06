@@ -43,7 +43,7 @@ selectionArticle.addEventListener("click", (e) => {
 const createPcSelection = () => {
   const pcArr = ["rock", "paper", "scissor"]
   pcRandom = pcArr[Math.floor(Math.random() * 3)]
-  pcRandom = "rock"
+
   pcSelectImg.src = `./assets/${pcRandom}.png`
   pcSelectImg.alt = pcRandom
   pcChoiceDiv.appendChild(pcSelectImg)
