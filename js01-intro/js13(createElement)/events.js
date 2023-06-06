@@ -27,3 +27,22 @@ printHello()
 window.addEventListener("load", () => {
     document.getElementById("input").focus()
 })
+
+
+
+const addBtn = document.querySelector("#btn")
+const ul = document.createElement("ul")
+document.querySelector(".item-list").before(ul)
+
+addBtn.addEventListener("click", (){
+    console.log('Btn Clicked');
+    console.log(e);
+    console.log(e.target);
+    console.log(e.target.value);
+
+
+const input = document.querySelector("#input")
+
+
+
+})
