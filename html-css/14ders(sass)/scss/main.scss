@@ -1,6 +1,46 @@
-$bgColor: pink;
+/*/ partial dosyaları @import ifadesiyle ana dosyamıza import edip kullanabiliriz*/
+
+@import "reset";
+@import "variables";
+
 
 body {
-    background-color: $bgColor;
-    font-size: 1rem;
+    background-color: $bgColor;/*değişkenşi kullanırkende aynı şekilde $ işaretini kullanıyoruz*/
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    color: $fontColor;
+}
+
+/** Nesting */
+
+header {
+    background-color: $navBgColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    img {
+        width: 80px;
+        border: $myBorder;
+        border-radius: 11px;
+        cursor: pointer;
+        &:hover {/*! içinde bulunduğumuz lementi & ile refer edebiliriz*/
+            // transform: scale(1.1);
+            scale:1.1;
+        }
+    }
+    ul {
+        list-style-type: none;
+        li {
+            padding: 0.5rem;
+            display: inline-block;
+            a{
+                text-decoration: none;
+                color: $fontColor;
+                &:hover {
+                  text-decoration: underline;  
+                }
+            }
+        }
+    }
 }
