@@ -45,4 +45,70 @@ header ul li a:hover {
   text-decoration: underline;
 }
 
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hotpink;
+  padding: 1rem;
+  line-height: 2rem;
+}
+.banner aside button {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 7px;
+  background-color: rgb(224, 169, 169);
+  cursor: pointer;
+}
+.banner aside button:hover {
+  background-color: pink;
+}
+.banner img {
+  width: 30%;
+}
+
+/*! mixin @include */
+/* fonksiyon tanımlıyoruz aslında. Bu fonksiyon parametre alabilen bir fonksiyon. Parametreleri tanımalrken $ işaretini kullanıyoruz. Mixinler parametre almak zorunda değildir. yani static yapılar da oluşturabiliriz. */
+/*mixinleri çaığırırken @include anahtar kelimesiyle çağırıyoruz.*/
+.cards {
+  display: flex;
+  gap: 0.5rem;
+}
+.cards .card1 {
+  background-color: yellow;
+  color: darkblue;
+  text-align: center;
+  width: 25%;
+  height: 14rem;
+  border: 2px solid brown;
+  border-radius: 1rem;
+}
+.cards .card2 {
+  background-color: red;
+  color: yellow;
+  text-align: center;
+  width: 25%;
+  height: 14rem;
+  border: 2px solid brown;
+  border-radius: 1rem;
+}
+.cards .card3 {
+  background-color: black;
+  color: white;
+  text-align: center;
+  width: 25%;
+  height: 14rem;
+  border: 2px solid brown;
+  border-radius: 1rem;
+}
+.cards .card4 {
+  background-color: maroon;
+  color: darkblue;
+  text-align: center;
+  width: 25%;
+  height: 14rem;
+  border: 2px solid brown;
+  border-radius: 1rem;
+}
+
 /*# sourceMappingURL=style.css.map */
