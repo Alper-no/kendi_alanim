@@ -3,6 +3,7 @@
 const input = document.getElementById("input");
 const ekle = document.getElementById("ekle");
 const toDoList = document.getElementById("toDoList");
+const dateSpan = document.getElementById('span')
 ekle.addEventListener("click", () => {
   toDoList.innerHTML += `
   <div>
@@ -24,4 +25,14 @@ toDoList.addEventListener("click", function (e) {
   }
 });
 
+let date = new Date().getDay()
 
+
+
+const newDate= () =>{
+    const day = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
+    dateSpan.textContent = `${day[date]}`
+}
+window.addEventListener("load",()=>{
+    newDate()
+})
