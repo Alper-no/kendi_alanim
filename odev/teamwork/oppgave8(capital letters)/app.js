@@ -15,11 +15,25 @@ button.addEventListener("click",()=>{
    
 
     let a = "";
-    for(let i=0; i< arrayText.length;i++){
-        a += arrayText[i][0].toLocaleUpperCase()+arrayText[i].slice(1)+ " "
+    // for(let i=0; i< arrayText.length;i++){
+    //     a += arrayText[i][0].toLocaleUpperCase()+arrayText[i].slice(1)+ " "
+    // }
+    // par.textContent = a
+    // console.log(a);
+    
+    
+    
+    //Alternatif
+    for (item of arrayText) {
+        a += item[0].toLocaleUpperCase()+item.slice(1)+ " "
+    
     }
     par.textContent = a
-    console.log(a);
+        console.log(a);
 
     
 })
+
+
+
+// for in index nosu dondurur , for of valuyu doldurur.
