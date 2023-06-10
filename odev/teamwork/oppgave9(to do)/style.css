@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.par-style{
+    corsor: pointer;
+    font-size: 2rem;
+    color: darkmagenta;
+    text-transform: capitalize;
+    text-align: left;
+}
