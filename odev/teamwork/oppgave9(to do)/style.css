@@ -9,4 +9,9 @@
     color: darkmagenta;
     text-transform: capitalize;
     text-align: left;
+    
+}
+
+div.edit .input{
+    text-decoration: line-through;
 }
