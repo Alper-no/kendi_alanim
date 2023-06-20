@@ -15,20 +15,28 @@ const getCoin = async () => {
     if (!res.ok) {
       throw new Error("Bulunmadi");
     }
-    const data = await reponse.json();
+    const data = await res.json();
+    domaYaz(data);
     // console.log(data);
   } catch (err) {
     console.log(err);
   }
 };
 
-const domaYaz = () => {
+const domaYaz = (veri) => {
+  const inputValue = document.getElementById("input").value;
+
+  let obj = veri.data.coins.filter((element) => {
+    return element.name === inputValue;
+  });
+  console.log(obj);
+
   const coins = document.querySelector(".coins");
   coins.innerHTML += `
     <figure class="coin">
           
           <figcaption class="coin-name">
-            <p class="coin-temp"></p>
+            <p class="coin-temp">${obj[0].name}</p>
             <sup></sup>
           </figcaption>
           <img class="coin-icon" src="" alt="">
