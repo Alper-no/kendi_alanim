@@ -25,21 +25,38 @@ const getCoin = async () => {
 
 const domaYaz = (veri) => {
   const inputValue = document.getElementById("input").value;
-
+  //   console.log(veri.data.coins);
   let obj = veri.data.coins.filter((element) => {
-    return element.name === inputValue;
-  });
-  console.log(obj);
+    return (
+      element.name.toLowerCase().trim() === inputValue.toLowerCase().trim() ||
+      element.symbol.toLowerCase().trim() === inputValue.toLowerCase().trim()
+    );
 
+    if(obj.length){
+        
+    }
+
+
+  });
+  // console.log(veri.data.coins);
+  console.log(obj);
+  table(obj[0]);
+};
+const table = (obj) => {
   const coins = document.querySelector(".coins");
   coins.innerHTML += `
     <figure class="coin">
-          
-          <figcaption class="coin-name">
-            <p class="coin-temp">${obj[0].name}</p>
-            <sup></sup>
-          </figcaption>
-          <img class="coin-icon" src="" alt="">
+    <figcaption class="coin-name"> 
+        <p class="coin-temp">${obj.name}
+        <sup>${obj.symbol}</sup></p>
+        </figcaption>
+        <p>${obj.price} </p>
+      <img class="coin-icon" src=${obj.iconUrl} alt="">
+      <p> </p>
     </figure>
-        `;
+    `;
 };
+// console.log(veri.data.coins[0].name); //? ana datadan icindeki dataya ulastik.Oradan da coins in icine ulastik.
+//? alternative line
+// async function getCoin() {
+// }
