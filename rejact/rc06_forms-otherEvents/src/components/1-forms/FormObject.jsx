@@ -1,4 +1,3 @@
-
 import { useState } from "react"
 
 const FormObject = () => {
@@ -21,6 +20,15 @@ const FormObject = () => {
     `)
   }
 
+  const handleFormData = (e) => {
+    console.log(e.target.value)
+    console.log(e.target.name)
+    console.log(e.target.id)
+    setFormData({ ...formData, [e.target.name]: e.target.value })
+  }
+
+  console.log(formData)
+
   return (
     <div className="container mt-4">
       <h2 className="text-center text-success">FORM OBJECT IN REACT</h2>
@@ -35,8 +43,9 @@ const FormObject = () => {
             id="username"
             aria-describedby="emailHelp"
             //? OnChange event'ı input degeri her degistiginde tetiklenir. Biz de yazdıgımız event handler araciligi ile State'i guncelleyebilmis oluruz.
-            onChange={handleUsername}
+            onChange={handleFormData}
             value={username}
+            name="username"
           />
         </div>
 
@@ -49,8 +58,9 @@ const FormObject = () => {
             className="form-control"
             id="email"
             aria-describedby="emailHelp"
-            onChange={(e) => setEmail(e.target.value)}
+            onChange={handleFormData}
             value={email}
+            name="email"
           />
         </div>
         <div className="mb-3">
@@ -61,8 +71,9 @@ const FormObject = () => {
             type="password"
             className="form-control"
             id="password"
-            onChange={(e) => setPassword(e.target.value)}
+            onChange={handleFormData}
             value={password}
+            name="password"
           />
         </div>
 
