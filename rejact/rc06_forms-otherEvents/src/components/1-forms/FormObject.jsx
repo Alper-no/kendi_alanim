@@ -2,14 +2,14 @@
 import { useState } from "react"
 
 const FormObject = () => {
-  const [username, setUsername] = useState("")
-  const [email, setEmail] = useState("")
-  const [password, setPassword] = useState("")
+  const [formData, setFormData] = useState({
+    username: "",
+    email: "",
+    password: "",
+  })
 
-  const handleUsername = (e) => {
-    // console.log(e.target.value)
-    setUsername(e.target.value)
-  }
+  //? Destr.
+  const { username, email, password } = formData
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -19,9 +19,6 @@ const FormObject = () => {
       email:${email}
       password:${password}
     `)
-    setEmail("")
-    setPassword("")
-    setUsername("")
   }
 
   return (
@@ -80,4 +77,3 @@ const FormObject = () => {
 }
 
 export default FormObject
-
