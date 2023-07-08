@@ -28,6 +28,7 @@ input{
 .player{
     border: 1px solid black;
     background-color: white;
+    width: 200px;
 }
 
 
