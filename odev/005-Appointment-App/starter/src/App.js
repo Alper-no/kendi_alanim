@@ -1,3 +1,5 @@
+import AddModel from "./components/AddModal";
+
 import Doctor from "./components/Doctor";
 
 function App() {
@@ -6,6 +8,8 @@ function App() {
       <h1 className="text-danger display-3 ">CLARUSWAY HOSPITAL</h1>
       <h2 className="text-primary">Our Doctor</h2>
       <Doctor/>
+      <AddModel/>
+      
     </div>
   );
 }
