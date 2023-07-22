@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { LoginContext } from "../context/LoginContext";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   // const [user, setUser] = useState({ email: "", password: "" });
@@ -10,8 +11,12 @@ const Login = () => {
 
   const {user,setUser} = useContext(LoginContext)
 
+
+  const navigate = useNavigate()
   const handleSubmit = (e) => {
     e.preventDefault();
+    navigate('/')
+    // setUser({ email: "", password: "" })
   };
 
   return (
@@ -24,6 +29,7 @@ const Login = () => {
             type="email"
             placeholder="Enter your email"
             name="email"
+            required
             value={user?.email}
             onChange={(e) => setUser({ ...user, email: e.target.value })}
           />
@@ -35,6 +41,7 @@ const Login = () => {
             type="password"
             placeholder="Enter your password"
             name="password"
+            required
             value={user?.password}
             onChange={(e) => setUser({ ...user, password: e.target.value })}
           />
