@@ -1,8 +1,23 @@
 import React from 'react'
+import StarRating from './StarRating';
 
-const FilmInfo = () => {
+const FilmInfo = ({data}) => {
+  console.log(data);
   return (
-    <div>FilmInfo</div>
+    <div>
+      {data.map((item)=>{
+        const {id,title,body,tags,rate}=item
+        return(
+          <div key={id}>
+            <h2>{title}</h2>
+            <p>{body}</p>
+            <p>{tags.join(', ')}</p>
+            <p className='rate text-danger fs-4'>{rate.toFixed(2)}{'/10'}</p>
+            <StarRating rate={rate}/>
+          </div>
+        )
+      })}
+    </div>
   )
 }
 
