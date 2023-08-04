@@ -4,7 +4,7 @@ import Typography from "@mui/material/Typography"
 import { useState } from "react"
 
 const TextFieldComp = () => {
-  const [err, setErr] = useState(false)
+  const [err] = useState(false)
   return (
     <Container sx={{ mt: 4 }} maxWidth="md">
       <Typography variant="h4" mt={2} color={"secondary.dark"} align="center">
