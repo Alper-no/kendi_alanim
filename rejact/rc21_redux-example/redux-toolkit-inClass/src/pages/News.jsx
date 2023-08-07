@@ -5,20 +5,33 @@ import CardContent from "@mui/material/CardContent"
 import Button from "@mui/material/Button"
 import Typography from "@mui/material/Typography"
 import { CardMedia } from "@mui/material"
-import { getNews } from "../features/newsSlice"
-import { useDispatch } from "react-redux"
+import { clearNews, getNews } from "../features/newsSlice"
+import { useDispatch, useSelector } from "react-redux"
 import { useEffect } from "react"
 
 const News = () => {
   const dispatch = useDispatch()
+  const { news, error } = useSelector((state) => state.api)
 
   useEffect(() => {
     dispatch(getNews())
+
+    //? news componenti DOM tree'den kaldirilinca state'deki bilgileri temizle
+    return () => {
+      dispatch(clearNews())
+    }
   }, [])
 
+  console.log(error)
   return (
     <>
       <h1>NEWS</h1>
+
+      {error && (
+        <Typography variant="h3" color={"error"}>
+          News can not be fetched
+        </Typography>
+      )}
       <Box
         xs={{ d: "flex" }}
         display="flex"
@@ -26,7 +39,7 @@ const News = () => {
         justifyContent="space-evenly"
         flexWrap="wrap"
       >
-        {[1, 2, 3].map((item, index) => (
+        {news?.map((item, index) => (
           <Card sx={{ maxWidth: 345, m: 5, maxHeight: 600 }} key={index}>
             <CardMedia
               component="img"
@@ -56,4 +69,5 @@ const News = () => {
 }
 
 export default News
+
 

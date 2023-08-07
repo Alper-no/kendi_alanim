@@ -14,13 +14,9 @@ export const getNews = createAsyncThunk(
     const API_KEY = "1a1a999e0d7240a6bd2dead87bcca78e"
     const url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${API_KEY}`
 
-    try {
-      const { data } = await axios(url)
-      console.log(data)
-      return data.articles
-    } catch (error) {
-      console.log(error)
-    }
+    const { data } = await axios(url)
+    console.log(data)
+    return data.articles
   }
 )
 
