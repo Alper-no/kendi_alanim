@@ -14,8 +14,8 @@ import { object, string } from "yup"
 import useAuthCall from "../hooks/useAuthCall"
 
 const Login = () => {
+  const { login } = useAuthCall()
 
-  const {login} = {useAuthCall}
   //? harici validasyon şemasi
   const loginSchema = object({
     email: string()
